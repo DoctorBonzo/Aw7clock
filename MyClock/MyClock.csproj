@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AECA1CC9-1CF2-4E73-B74D-B86E9BCE82F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyClock</RootNamespace>
+    <AssemblyName>MyClock</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clock.Designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cronometer_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\diner_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\flower_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\modern_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\novelty_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_divider_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_divider_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_box_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_corner_bottom_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_corner_bottom_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_corner_top_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_corner_top_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_divider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_divider_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_divider_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_left_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_left_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_left_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_left_rest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_right_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_right_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_right_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\settings_right_rest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\spacer_highlights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\square_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\system_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad_dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad_h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad_s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\trad_settings.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
